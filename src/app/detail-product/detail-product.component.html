@@ -1,0 +1,18 @@
+<div class="product-detail-card">
+    <h2>Product Details</h2>
+    <div class="product-detail-content">
+      <img [src]="product.image" alt="{{ product.name }}" class="product-detail-image" />
+      <div class="product-info">
+        <p><strong>Name:</strong> {{ product.name }}</p>
+        <p><strong>Price:</strong> ${{ product.price }}</p>
+        <p><strong>Color:</strong> {{ product.color }}</p>
+        <p>
+          <strong>Status:</strong>
+          <span [ngStyle]="{ color: product.available === 'Available' ? 'green' : 'red' }">
+            {{ product.available }}
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,18 @@
+.filter {
+    display: flex;
+    justify-content: center; /* Centers the filter items */
+    align-items: center; /* Aligns them vertically */
+    gap: 20px; /* Space between the options */
+    margin: 20px 0; /* Adds spacing above and below the filter */
+  }
+  
+  .filter label {
+    font-size: 16px; /* Adjusts the text size */
+    color: #333; /* Dark gray for text */
+    cursor: pointer; /* Makes the labels clickable */
+  }
+  
+  .filter input[type="radio"] {
+    margin-right: 5px; /* Space between the radio button and the label text */
+  }
+  

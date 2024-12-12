@@ -1,0 +1,37 @@
+header {
+    background-color: #f4f4f4; /* Light background for the header */
+    padding: 20px; /* Space around the content */
+    border-bottom: 2px solid #ddd; /* Subtle border at the bottom */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center; /* Align items vertically within the container */
+    gap: 20px; /* Space between the image and the slogan */
+  }
+  
+  .image-container img {
+    max-width: 400px; /* Restricts the size of the image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Rounds the corners of the image */
+  }
+  
+  .slogan-container {
+    text-align: center; /* Centers the slogan text */
+  }
+  
+  .slogan-container h1 {
+    font-size: 24px; /* Adjusts the size of the main slogan */
+    color: #333; /* Dark gray color for the text */
+    margin: 0; /* Removes extra margin around the heading */
+  }
+  
+  .slogan-container p {
+    font-size: 16px; /* Adjusts size for subtext */
+    color: #666; /* Lighter gray for the subtext */
+    margin: 5px 0 0; /* Adds space above but no space below */
+  }
+  

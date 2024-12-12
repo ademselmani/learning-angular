@@ -1,0 +1,20 @@
+<div class="filter">
+    <label>
+      <input type="radio" name="filter" value="all" 
+      (change)="onFilterChange('all')"/>
+      {{'All products('+ All +')'}}
+    </label>
+
+    <label>
+      <input type="radio" name="filter" value="available"
+       (change)="onFilterChange('available')"/>
+      {{'Available products ('+ Available +')'}}
+    </label>
+    
+    <label>
+      <input type="radio" name="filter" value="not-available" 
+      (change)="onFilterChange('not-available')"/>
+      {{'Not Available products ('+ NotAvailable +')'}}
+    </label>
+  </div>
+  

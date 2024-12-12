@@ -1,0 +1,23 @@
+<div class="product-container">
+  <h2>Product List</h2>
+  <div class="product-grid">
+    <ng-container *ngFor="let p of getFilteredProducts()">
+      <div
+        class="product-card"
+        (click)="selectedProduct = p"
+        [ngStyle]="{
+          backgroundColor: p.available === 'Available' ? '#D5F5E3' : '#FADBD8'
+        }"
+      >
+        <img [src]="p.image" alt="{{ p.name }}" class="product-image" />
+        <div class="product-details">
+          <h3>{{ p.name }}</h3>
+          <p>Price: ${{ p.price }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <!-- Display Product Details -->
+  <app-detail-product *ngIf="selectedProduct" [product]="selectedProduct"></app-detail-product>
+</div>
